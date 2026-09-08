@@ -1,3 +1,5 @@
+package hw.bits;
+
 public class MathByte {
     static public String toBinaryString(int value) {
         StringBuilder res = new StringBuilder();

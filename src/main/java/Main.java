@@ -1,3 +1,5 @@
+import hw.bits.MathByte;
+
 public class Main {
     public static void main(String[] args) {
         int value = 17 ;
@@ -7,7 +9,5 @@ public class Main {
         System.out.println(binaryString);
         System.out.println(fromBinaryString);
         System.out.println(fromBinaryString == value);
-
-
     }
 }
