@@ -1,13 +1,15 @@
-import hw.bits.MathByte;
+import hw.oop.MatrixDiagonal;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int value = 17 ;
-        String binaryString = MathByte.toBinaryString(value);
-        int fromBinaryString = MathByte.fromBinaryString(binaryString);
+        int[][] matrix = {{0, 1, 2}, {4, 5, 6}, {1, 1, 1}};
 
-        System.out.println(binaryString);
-        System.out.println(fromBinaryString);
-        System.out.println(fromBinaryString == value);
+        int[] diagonal = MatrixDiagonal.getDiagonal(matrix);
+        int[] counterDiagonal = MatrixDiagonal.getCounterDiagonal(matrix);
+
+        System.out.println("diagonal = " + Arrays.toString(diagonal));
+        System.out.println("counterDiagonal = " + Arrays.toString(counterDiagonal));
     }
 }
